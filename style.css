@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #1e1e1e;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #45a049;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    padding: 10px;
+  }
