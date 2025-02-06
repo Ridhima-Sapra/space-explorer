@@ -1,42 +1,109 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    color: #ffffff;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Navigation Styling */
+nav {
+  margin-bottom: 30px;
+}
+
+nav button {
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #2980b9;
+}
+
+/* APOD Date Section */
+#apod-section {
+  margin: 20px 0;
+}
+
+#apod-date {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+}
+
+#fetch-apod-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#fetch-apod-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Content Section Styling */
+#content {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
   }
-  
-  header {
-    background-color: #1e1e1e;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
+
   nav button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+      font-size: 14px;
+      padding: 8px 15px;
+      margin: 5px;
   }
-  
-  nav button:hover {
-    background-color: #45a049;
+
+  #apod-date {
+      font-size: 14px;
+      padding: 8px;
   }
-  
-  main {
-    padding: 20px;
+
+  #fetch-apod-btn {
+      font-size: 14px;
+      padding: 8px 15px;
   }
-  
-  footer {
-    margin-top: 20px;
-    background-color: #1e1e1e;
-    padding: 10px;
-  }
+}
